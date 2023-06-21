@@ -1,0 +1,104 @@
+{% extends 'core/base.html' %}
+{% load static %}
+{% block title %}Welcome | E-News{% endblock %} 
+
+{% block content %}
+
+    <header class="pt-5">
+        <div class="container pt-4 pt-xl-5">
+            <div class="row pt-5">
+                <div class="col-md-8 text-center text-md-start mx-auto">
+                    <div class="text-center">
+                        <h1 class="display-4 fw-bold mb-5">Here you'll find the latest  &nbsp;<span class="underline">news</span>.</h1>
+                    </div>
+                </div>
+                <div class="col-12 col-lg-10 mx-auto">
+                    <div class="text-center position-relative"><img class="img-fluid" src="{% static 'core/img/illustrations/meeting.svg' %}" style="width: 800px;"></div>
+                </div>
+            </div>
+        </div>
+    </header>
+   <section>
+        <div class="container py-4 py-xl-5">
+            <div class="row gy-4 gy-md-0">
+                <div class="col-md-6 text-center text-md-start d-flex d-sm-flex d-md-flex justify-content-center align-items-center justify-content-md-start align-items-md-center justify-content-xl-center">
+                    <div><img class="rounded img-fluid fit-cover" style="min-height: 300px;" src="{% static 'core/img/illustrations/presentation.svg' %}" width="800"></div>
+                </div>
+                <div class="col">
+                    <div style="max-width: 450px;">
+                        <h3 class="fw-bold pb-md-4">Some stats about our &nbsp;<span class="underline">website</span></h3>
+                        <p class="text-muted py-4 py-md-0"></p>
+                        <div class="row gy-4 row-cols-2 row-cols-md-2">
+                            <div class="col">
+                                <div><span class="fs-2 fw-bold text-primary bg-warning">24/7</span>
+                                    <p class="fw-normal text-muted">Work rate</p>
+                                </div>
+                            </div>
+                            <div class="col">
+                                <div><span class="fs-2 fw-bold text-primary bg-warning">100+</span>
+                                    <p class="fw-normal text-muted"> Last minute news</p>
+                                </div>
+                            </div>
+                            <div class="col">
+                                <div><span class="fs-2 fw-bold text-primary bg-warning">1st</span>
+                                    <p class="fw-normal text-muted">Experience</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="py-4 py-xl-5 mb-5">
+        <div class="container">
+            <div class="row mb-2">
+                <div class="col-md-8 col-xl-6 text-center mx-auto">
+                    <h2 class="display-6 fw-bold mb-5"><span class="pb-3 underline">FAQ<br></span></h2>
+                  </div>
+            </div>
+            <div class="row mb-2">
+                <div class="col-md-8 mx-auto">
+                    <div class="accordion text-muted" role="tablist" id="accordion-1">
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" role="tab"><button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#accordion-1 .item-1" aria-expanded="true" aria-controls="accordion-1 .item-1">Can I share articles from your website on social media platforms?</button></h2>
+                            <div class="accordion-collapse collapse show item-1" role="tabpanel" data-bs-parent="#accordion-1">
+                                <div class="accordion-body">
+                                    <p>You have all the right to share our articles, but leave us a positive feedback !</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" role="tab"><button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#accordion-1 .item-2" aria-expanded="false" aria-controls="accordion-1 .item-2">How can I report errors, bugs, or technical issues on your website?</button></h2>
+                            <div class="accordion-collapse collapse item-2" role="tabpanel" data-bs-parent="#accordion-1">
+                                <div class="accordion-body">
+                                    <p class="mb-0">Report it in the contact us section. </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" role="tab"><button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#accordion-1 .item-3" aria-expanded="false" aria-controls="accordion-1 .item-3">How can I stay updated with the latest news from your website?</button></h2>
+                            <div class="accordion-collapse collapse item-3" role="tabpanel" data-bs-parent="#accordion-1">
+                                <div class="accordion-body">
+                                    <p class="mb-0">Check our website frequently.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="py-4 py-xl-5">
+        <div class="container">
+            <div class="text-white bg-primary border rounded border-0 border-primary d-flex flex-column justify-content-between flex-lg-row p-4 p-md-5">
+                <div class="pb-2 pb-lg-1">
+                    <h2 class="fw-bold text-warning mb-2">Found some problems ?</h2>
+                 </div>
+                <div class="my-2"><a class="btn btn-light fs-5 py-2 px-4" role="button" href="mailto:ridaouimoncef1@gmail.com">Email us</a></div>
+            </div>
+        </div>
+    </section>
+
+
+{% endblock %}
